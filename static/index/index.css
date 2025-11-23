@@ -1,0 +1,36 @@
+#serverimg {
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin-left: 25%;
+}
+
+#connect_info {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#serveripconnect {
+    width: 40%;
+    border: 2px solid #000;
+}
+
+#friendconnect {
+    width: 15%;
+    border: 2px solid #000;
+}
+
+
+
+@media (max-width: 1024px) {
+#serveripconnect {
+    width: 99%;
+}
+#friendconnect {
+    width: 60%;
+}
+#serverimg {
+    width: 99%;
+    margin-left: 0;
+}
+}

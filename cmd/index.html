@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/static/main.js"></script>
+  <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="/static/cmd/index.css">
+  <script src="/static/cmd/index.js"></script>
+  <title>あう鯖 | コマンド</title>
+</head>
+<body>
+  <nav id="menu">
+    <p style="width: max-content;margin: auto;padding-left: 10px;padding-right: 10px;border-bottom: 1px dashed #000;"><b><a href="/" style="text-decoration: none; color: black;">AuServer</a></b></p>
+    <ul>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/cmd/">コマンド</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="bdsstatus float-in">
+    <h2>あう鯖(<span class="isonline">読み込み中</span>)</h2>
+    <h3>プレイヤー数:<span class="player">読み込み中</span></h3>
+    <h4>取得時間:<span class="gettime">読み込み中</span></h4>
+  </div>
+
+  <h1 style="text-align: center;">コマンドとその使い方</h1>
+
+  <div id="cmds" class="float-in">
+    <h2 style="text-align: center;">使用可能コマンド</h2>
+    <div class="cmd">
+        <h3>/sv</h3>
+        <p>サーバー(ZEQA,hesu,HIVE,らーす鯖)に直接参加できます</p>
+    </div>
+    <div class="cmd">
+        <h3>/customserver &lt;ServerIP&gt; &lt;Port&gt;</h3>
+        <p>自分でサーバーIP、ポートを指定して参加できます</p>
+    </div>
+
+    <button id="openadmincmd">管理者専用コマンドを表示</button>
+    <div id="admincmd" style="display: none;">
+        <h2 style="text-align: center;">管理者専用コマンド</h2>
+        <div class="cmd">
+            <h3>/backup</h3>
+            <p>手動でバックアップを行います</p>
+        </div>
+        <div class="cmd">
+            <h3>/backuplist</h3>
+            <p>本日分のバックアップリストを表示します</p>
+        </div>
+        <div class="cmd">
+            <h3>/debug</h3>
+            <p>デバッグ用情報を表示します</p>
+        </div>
+        <div class="cmd">
+            <h3>/addonreload</h3>
+            <p>標準アドオンのコピーと全アドオンのリロードをします</p>
+        </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="link">
+    <div class="float-in">
+      <p>Discordに参加しよう！</p>
+      <a href="https://discord.gg/Ug8VHAC7ue" target="_blank"><img src="/static/imgs/Discord-Logo-Blurple.svg" alt="Discord" class="discord" ></a>
+    </div>
+    <div class="float-in">
+      <p>鯖主のクラフターズコロニー！</p>
+      <a href="https://minecraft-mcworld.com/author/12475666b9e1c70adea9f2ef2b9835ca78a4aebf/" target="_blank"><img src="/static/imgs/crafters_colony_logo_wide.webp" alt="crafters_colony" class="crafters_colony" ></a>
+    </div>
+    </div>
+      <p>Font: <a href="https://fonts.google.com/specimen/M+PLUS+1" target="_blank">M PLUS 1</a> by Google Fonts</p>
+
+  </footer>
+</body>
+</html>

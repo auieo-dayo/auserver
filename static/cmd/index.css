@@ -1,0 +1,23 @@
+#cmds {
+    width: 100%;
+}
+.cmd {
+    border: 1px solid #000;
+    width: fit-content;
+    margin: auto;
+}
+.cmd h3{
+    text-align: center;
+}
+.cmd p {
+    text-align: center;
+}
+#openadmincmd {
+    width: max-content;
+    margin: auto;
+    display: block;
+    height: 5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
