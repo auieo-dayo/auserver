@@ -66,12 +66,17 @@ body {
     border: 2px solid #000;
     border-radius: 10px;
     padding: 5px;
+    transition: 0.3s;
 }
 .crafters_colony {
     width: 300px;
     background-color: #f4f59c62;
     border: 2px solid #000;
     border-radius: 10px;
+    transition: 0.3s;
+}
+.discord:hover , .crafters_colony:hover {
+    background-color: #9cf5a162;
 }
 
 .bdsstatus {

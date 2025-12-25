@@ -20,7 +20,16 @@
     border: 2px solid #000;
 }
 
+#join_discord {
+    text-align: center;
+    margin-bottom: 10vh;
+}
 
+
+#join_discord .discord {
+    vertical-align: middle;
+    width: 150px;
+}
 
 @media (max-width: 1024px) {
 #serveripconnect {
