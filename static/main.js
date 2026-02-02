@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 document.addEventListener("DOMContentLoaded",async()=>{
     if (location.search == "?debug") return
-    const bdsstatusres = await fetch("https://api.mcsrvstat.us/bedrock/3/star.ssnetwork.io:52532")
+    const bdsstatusres = await fetch("https://api.mcsrvstat.us/bedrock/3/star.ssnetwork.io:41170")
     const json = await bdsstatusres.json()
     const date = new Date()
     let hh = String(date.getHours()).padStart(2, "0");
