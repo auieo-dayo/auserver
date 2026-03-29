@@ -17,18 +17,24 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 document.addEventListener("DOMContentLoaded",async()=>{
     if (location.search == "?debug") return
-    const bdsstatusres = await fetch("https://api.mcsrvstat.us/bedrock/3/star.ssnetwork.io:41170")
+    const bdsstatusres = await fetch("https://api.ausaba.f5.si/api/status")
+
     const json = await bdsstatusres.json()
     const date = new Date()
     let hh = String(date.getHours()).padStart(2, "0");
     let mm = String(date.getMinutes()).padStart(2, "0");
     let ss = String(date.getSeconds()).padStart(2, "0");
-    const player = json.players
+    const playerlist = json.playerlist
     for (const ele of document.querySelectorAll(".bdsstatus")) {
-        if (json.online) {
+        if (json.status == "online") {
             ele.querySelector(".isonline").classList.add("online")
             ele.querySelector(".isonline").textContent = "オンライン"
-            ele.querySelector(".player").textContent = `${player.online}/${player.max}`
+            ele.querySelector(".player").textContent = `${json.length}`
+            for (const p of playerlist) {
+                const li = document.createElement("li")
+                li.textContent = p
+                ele.querySelector(".playerlist").appendChild(li)
+            }
         } else {
             ele.querySelector(".isonline").textContent = "オフライン"
             ele.querySelector(".isonline").classList.add("offline")
