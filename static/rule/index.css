@@ -1,0 +1,41 @@
+.title {
+    width: max-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.title:hover , .title:active{
+    rotate: 5deg;
+}
+.rule {
+    margin-top: 30px;
+    border-top: 1px solid #000;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #000;
+}
+.section {
+    width: max-content;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 3px dashed #000;
+    font-family: "Kiwi Maru", serif;
+}
+.rule p {
+    text-align: center;
+}
+.rule p::before {
+    content: "・";
+    font-size:large;
+}
+.channel {
+    background-color: rgb(192, 192, 192);
+    border-radius: 3px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.role-admin {
+    color: #e91e63;
+}
