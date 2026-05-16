@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",async()=>{
     let ss = String(date.getSeconds()).padStart(2, "0");
     const playerlist = json.playerlist
     for (const ele of document.querySelectorAll(".bdsstatus")) {
-        if (json.status == "online") {
+        if (json.online) {
             ele.querySelector(".isonline").classList.add("online")
             ele.querySelector(".isonline").textContent = "オンライン"
             ele.querySelector(".player").textContent = `${json.length}`
